@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para Kay Maxene</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fce4ec;
+      color: #880e4f;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+    }
+    .date {
+      font-weight: 600;
+      margin-bottom: 15px;
+      font-size: 14px;
+      color: #ad1457;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      font-style: italic;
+      color: #6a1b4d;
+    }
+    .message {
+      background-color: #f8bbd0;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(136, 14, 79, 0.2);
+      white-space: pre-wrap;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-top: 20px;
+      display: none;
+      text-align: left;
+      position: relative;
+    }
+    .message::before, .message::after {
+      content: '🌸';
+      position: absolute;
+      font-size: 24px;
+      color: #ad1457;
+    }
+    .message::before {
+      top: 10px;
+      left: 15px;
+    }
+    .message::after {
+      bottom: 10px;
+      right: 15px;
+    }
+    button {
+      background-color: #880e4f;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #ad1457;
+    }
+  </style>
+</head>
+<body>
+  <div class="date">I love you</div>
+  <h1 class="title">“Maxene”</h1>
+  <button id="showMsgBtn">Click moto</button>
+  <div class="message" id="longMessage">
+    <div></div>
+    <h1> I Love you Maxene Buan </h1>
+    Sa liwanag ng buwan,
+    Sa bawat gabing ikaw ay malayo,
+Tahimik akong nakatingin sa langit hanap ang anyo mo.
+Hindi man tayo madalas magkatabi,
+Ang puso kong ito'y sa’yo lang umiibig nang buo’t sabay-sabay, Buan ng aking gabi.
+
+Parang ikaw ang buwan sa madilim kong kalangitan
+Bihirang masilayan, pero kailanma’y hindi nalilimutan.
+Sa mata mo, natagpuan ko ang tahanan,
+Kahit hindi pa tayo magkasama sa iisang tahanan.
+
+Ang apelyido mong Buan, sinasambit ng puso ko sa bawat tibok,
+Parang panalangin na sana, sa bawat araw, ikaw ang kasalok.
+Sa bawat “ingat” mo, ramdam ko ang pag-aalaga,
+Na kahit may layo, ang pagmamahal ay 'di nagmamaliw, ‘di nawawala.
+
+Pangarap kong isang araw, paggising ko’y nariyan ka,
+Hindi na sa chat, kundi sa tunay na yakap at halakhak na dama.
+Hanggang dumating ang tamang araw at oras,
+Na ang Buan ko’y di na tanaw sa langit kundi katabi ko na, palagi, habang buhay.
+
+I love you.
+
+
+-Nag mamahal Adrian Joseph G. Esguerra 
+😼😼
+  </div>
+
+  <script>
+    const btn = document.getElementById('showMsgBtn');
+    const msg = document.getElementById('longMessage');
+
+    btn.addEventListener('click', () => {
+      if (msg.style.display === 'none') {
+        msg.style.display = 'block';
+        btn.textContent = 'Close message';
+      } else {
+        msg.style.display = 'none';
+        btn.textContent = 'Maxene';
+      }
+    });
+  </script>
+</body>
+</html>
